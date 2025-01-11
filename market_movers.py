@@ -7,7 +7,7 @@ url = 'https://finance.yahoo.com'
 
 # Get the HTML content
 response = requests.get(url)
-soup = BeautifulSoup(response.text, 'html')
+soup = BeautifulSoup(response.text, 'html.parser')
 
 # Get the headers
 class_header = 'title-text yf-1qzp9vr'
